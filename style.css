@@ -1,260 +1,151 @@
 * {
   box-sizing: border-box;
-}
-
-body {
   margin: 0;
-  font-family: 'Inter', sans-serif;
-  background-color: #ffffff;
-  color: #1f2933;
+  padding: 0;
 }
 
-.cta-button {
-  display: inline-block;
-  padding: 14px 30px;
-  background: linear-gradient(135deg, #ff7a18, #ff3d00);
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #fffaf5;
+  color: #2d2d2d;
+}
+
+/* HERO */
+.hero {
+  min-height: 90vh;
+  background: linear-gradient(
+    rgba(0,0,0,0.45),
+    rgba(0,0,0,0.45)
+  ),
+  url("https://images.unsplash.com/photo-1518717758536-85ae29035b6d?auto=format&fit=crop&w=1600&q=80");
+  background-size: cover;
+  background-position: center;
   color: white;
-  text-decoration: none;
-  border-radius: 50px;
-  font-weight: bold;
-  letter-spacing: 0.5px;
-  transition: all 0.4s ease;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  text-align: center;
+  padding: 120px 20px;
+  animation: fadeDown 1.2s ease;
 }
 
-.cta-button:hover {
-  transform: translateY(-4px) scale(1.05);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-  background: linear-gradient(135deg, #ff3d00, #ff7a18);
-}
-img {
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-}
-
-img:hover {
-  transform: scale(1.04);
-  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
-}
-body {
-  background: #f4f8fb;
-  color: #1f2933;
-}
-
-h1 {
-  color: #1d4ed8;
-}
-
-p {
-  color: #374151;
-}
-body {
-  animation: fadeIn 1.2s ease-in;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-/* Elegant Sections */
-.info-section {
-  margin-top: 50px;
-  padding: 40px 20px;
-  background: #faf7f2;
-  border-radius: 16px;
-  animation: fadeUp 1.2s ease;
-}
-
-.info-section h2 {
-  color: #8b5e34;
+.hero h1 {
+  font-size: 48px;
   margin-bottom: 15px;
 }
 
-.info-section p {
-  color: #4a3f35;
-  font-size: 18px;
-  max-width: 800px;
+.hero p {
+  font-size: 20px;
+  max-width: 650px;
   margin: 0 auto 30px;
 }
 
-/* Feature Boxes */
+/* BUTTON */
+.main-btn {
+  display: inline-block;
+  background: #f97316;
+  color: white;
+  padding: 15px 35px;
+  border-radius: 40px;
+  font-size: 18px;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.main-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.35);
+}
+
+/* FEATURES */
 .features {
   display: flex;
   flex-wrap: wrap;
+  gap: 25px;
   justify-content: center;
-  gap: 20px;
+  padding: 80px 20px;
 }
 
-.feature-box {
+.card {
+  background: white;
+  width: 280px;
+  padding: 30px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+  transition: transform 0.4s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card h3 {
+  color: #f97316;
+  margin-bottom: 10px;
+}
+
+/* CTA */
+.cta {
+  background: #fff1e6;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.cta h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.cta p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+/* FAQ */
+.faq {
+  padding: 80px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.faq h2 {
+  text-align: center;
+  font-size: 34px;
+  margin-bottom: 40px;
+}
+
+.faq-box {
   background: white;
   padding: 25px;
-  width: 260px;
   border-radius: 14px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-}
-
-.feature-box:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.25);
-}
-
-.feature-box h3 {
-  color: #e76f51;
-  margin-bottom: 10px;
-}
-
-/* CTA Section */
-.cta-section {
-  margin-top: 60px;
-  padding: 50px 20px;
-  background: linear-gradient(135deg, #e76f51, #f4a261);
-  color: white;
-  border-radius: 20px;
-  animation: fadeUp 1.4s ease;
-}
-
-.cta-section h2 {
-  margin-bottom: 10px;
-}
-
-.cta-section p {
-  font-size: 18px;
   margin-bottom: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  transition: background 0.3s ease;
 }
 
-/* Smooth fade-up animation */
-@keyframes fadeUp {
+.faq-box:hover {
+  background: #fff7ed;
+}
+
+.faq-box h4 {
+  font-size: 20px;
+  margin-bottom: 8px;
+  color: #f97316;
+}
+
+.faq-box p {
+  font-size: 17px;
+  color: #444;
+}
+
+/* ANIMATIONS */
+@keyframes fadeDown {
   from {
     opacity: 0;
-    transform: translateY(25px);
+    transform: translateY(-30px);
   }
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
-/* Testimonials Section */
-.testimonials {
-  margin-top: 60px;
-  padding: 40px 20px;
-  background: #fef9f4;
-  border-radius: 18px;
-  animation: fadeUp 1.3s ease;
-}
 
-.testimonials h2 {
-  color: #8b5e34;
-  margin-bottom: 30px;
-}
 
-.testimonial-cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-.testimonial {
-  background: white;
-  padding: 25px;
-  width: 280px;
-  border-radius: 14px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-}
-
-.testimonial:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 14px 30px rgba(0,0,0,0.25);
-}
-
-.testimonial p {
-  font-style: italic;
-  color: #4a3f35;
-}
-
-.testimonial span {
-  display: block;
-  margin-top: 10px;
-  font-weight: bold;
-  color: #e76f51;
-}
-
-/* CLEAN HERO */
-.hero-clean {
-  padding: 100px 20px;
-  background-color: #f8fafc;
-}
-
-.hero-content {
-  max-width: 900px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.hero-clean h1 {
-  font-size: 44px;
-  font-weight: 700;
-  margin-bottom: 16px;
-  letter-spacing: -0.5px;
-}
-
-.hero-clean p {
-  font-size: 20px;
-  line-height: 1.6;
-  color: #4b5563;
-  max-width: 700px;
-  margin: 0 auto 32px;
-}
-
-.btn-primary {
-  display: inline-block;
-  padding: 14px 28px;
-  font-size: 18px;
-  font-weight: 600;
-  color: #ffffff;
-  background-color: #2563eb;
-  border-radius: 8px;
-  text-decoration: none;
-  transition: background 0.2s ease, transform 0.2s ease;
-}
-
-.btn-primary:hover {
-  background-color: #1d4ed8;
-  transform: translateY(-2px);
-}
-
-/* CLEAN FAQ */
-.faq-clean {
-  padding: 80px 20px;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.faq-clean h2 {
-  font-size: 34px;
-  margin-bottom: 40px;
-  text-align: center;
-}
-
-.faq-item {
-  margin-bottom: 28px;
-}
-
-.faq-item h4 {
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 8px;
-}
-
-.faq-item p {
-  font-size: 17px;
-  color: #4b5563;
-  line-height: 1.6;
-}
