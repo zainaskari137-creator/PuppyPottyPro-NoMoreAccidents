@@ -148,4 +148,56 @@ body {
   }
 }
 
+.how-it-works,
+.who-for,
+.why-different {
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.steps {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.step-box {
+  background: white;
+  width: 260px;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.step-box span {
+  color: #f97316;
+  font-weight: 600;
+}
+
+.who-for ul {
+  list-style: none;
+  max-width: 500px;
+  margin: auto;
+  font-size: 18px;
+}
+
+.who-for li {
+  margin-bottom: 10px;
+}
+
+.why-different p {
+  max-width: 700px;
+  margin: 15px auto;
+  font-size: 18px;
+}
+
+.disclaimer {
+  background: #fff1e6;
+  padding: 20px;
+  font-size: 14px;
+  text-align: center;
+  color: #555;
+}
+
 
