@@ -50,4 +50,83 @@ body {
     transform: translateY(0);
   }
 }
+/* Elegant Sections */
+.info-section {
+  margin-top: 50px;
+  padding: 40px 20px;
+  background: #faf7f2;
+  border-radius: 16px;
+  animation: fadeUp 1.2s ease;
+}
+
+.info-section h2 {
+  color: #8b5e34;
+  margin-bottom: 15px;
+}
+
+.info-section p {
+  color: #4a3f35;
+  font-size: 18px;
+  max-width: 800px;
+  margin: 0 auto 30px;
+}
+
+/* Feature Boxes */
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.feature-box {
+  background: white;
+  padding: 25px;
+  width: 260px;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.feature-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+}
+
+.feature-box h3 {
+  color: #e76f51;
+  margin-bottom: 10px;
+}
+
+/* CTA Section */
+.cta-section {
+  margin-top: 60px;
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #e76f51, #f4a261);
+  color: white;
+  border-radius: 20px;
+  animation: fadeUp 1.4s ease;
+}
+
+.cta-section h2 {
+  margin-bottom: 10px;
+}
+
+.cta-section p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Smooth fade-up animation */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
